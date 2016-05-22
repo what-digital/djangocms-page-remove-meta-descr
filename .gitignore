@@ -1,0 +1,15 @@
+*.log
+*.pot
+*.pyc
+.project
+.pydevproject
+.settings
+djangocms_link.egg-info
+dist
+build
+env*
+.tox
+.coverage
+.eggs
+.idea
+__pychache__/
