@@ -7,8 +7,7 @@ class PageAdmin(pageadmin.PageAdmin):
     Remove the meta description field from the page admin (we have this in django-cms-meta)
     """
     def get_form(self, request, obj=None, **kwargs):
-        form_cls = self.get_form_class(request, obj)
-        form = super(PageAdmin, self).get_form(request, obj, form=form_cls, **kwargs)
+        form = super(PageAdmin, self).get_form(request, obj, **kwargs)
         try:
             del form.base_fields['meta_description']
         except KeyError:
