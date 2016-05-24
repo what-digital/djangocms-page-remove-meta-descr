@@ -19,7 +19,7 @@ CLASSIFIERS = [
 
 setup(
     name='djangocms-page-remove-meta-descr',
-    version='1.0',
+    version='1.1',
     description='Removes the meta description of the djangocms page',
     author='what.digital',
     author_email='mario@what.digital',
